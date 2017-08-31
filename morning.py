@@ -53,7 +53,7 @@ if __name__ == '__main__':
             # 读取Cookies
             c = Cookies(Site.domain)
             if c:
-                session.cookies = requests.utils.cookiejar_from_dict({k: v for k, v in c})
+                session.cookies = c.jar
             else:
                 session.cookies = requests.utils.cookiejar_from_dict({})
             # 重置请求头

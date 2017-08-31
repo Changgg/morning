@@ -3,4 +3,4 @@ lxml
 requests
 faker
 pycrypto
-pycookiecheat
+browsercookie
